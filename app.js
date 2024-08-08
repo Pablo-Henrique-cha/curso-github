@@ -3,11 +3,6 @@ let numeroLimente = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
-function exibirTextoNaTela(tag, texto) {
-    let campo = document.querySelector(tag);
-    campo.innerHTML = texto;
-    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate: 1.2});
-}
 function boasvindas() {
     exibirTextoNaTela('h1', 'jogo do numero secreto');
     exibirTextoNaTela('p', 'escolha um numero entre 1 e ' + numeroLimente);
